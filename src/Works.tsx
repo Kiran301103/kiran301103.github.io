@@ -11,7 +11,7 @@ export default function Works() {
                     <div className="font-bold text-lg">Weather Alert</div>
                     Simple weather alert notification system for real-time weather updates.
                     <div className="mt-4 flex gap-2 h-10">
-                        <a className="flex items-center w-full gap-2 bg-[#f694fb] hover:bg-[#f694fb]/80 p-2 rounded-lg text-black" href="" target="_blank"><FaInternetExplorer className="w-6 h-6" /> Try Tasker</a>
+                        <a className="flex items-center w-full gap-2 bg-[#f694fb] hover:bg-[#f694fb]/80 p-2 rounded-lg text-black" href="" target="_blank"><FaInternetExplorer className="w-6 h-6" /> Try</a>
                         <a className="flex items-center w-full gap-2 bg-[#f694fb] hover:bg-[#f694fb]/80 p-2 rounded-lg text-black" href="https://github.com/Kiran301103/weather-alert-using-python" target="_blank"><FaGithubSquare className="w-6 h-6" /> View on Github</a>
                     </div>
                 </div>
@@ -19,7 +19,7 @@ export default function Works() {
                     <div className="font-bold text-lg">Virtual tour to Indian Pilgrimages</div>
                     A simple website that allows users to click on pilgrimage images and be redirected to a 360-degree view of the location using Google integration.
                     <div className="mt-4 flex gap-2 h-10">
-                        <a className="flex items-center w-full gap-2 bg-[#f694fb] hover:bg-[#f694fb]/80 p-2 rounded-lg text-black" href="" target="_blank"><FaInternetExplorer className="w-6 h-6" /> Try Draw</a>
+                        <a className="flex items-center w-full gap-2 bg-[#f694fb] hover:bg-[#f694fb]/80 p-2 rounded-lg text-black" href="" target="_blank"><FaInternetExplorer className="w-6 h-6" /> Try</a>
                         <a className="flex items-center w-full gap-2 bg-[#f694fb] hover:bg-[#f694fb]/80 p-2 rounded-lg text-black" href="https://github.com/Kiran301103/virtual-visit-to-indian-pilgrimage" target="_blank"><FaGithubSquare className="w-6 h-6" /> View on Github</a>
                     </div>
                 </div>
