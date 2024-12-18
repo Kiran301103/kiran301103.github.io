@@ -53,7 +53,27 @@ export default function Works() {
                         <a className="flex items-center w-full gap-2 bg-[#f694fb] hover:bg-[#f694fb]/80 p-2 rounded-lg text-black" href="https://kiran301103.github.io/virtual-visit-to-indian-pilgrimage/KIRAN.html" target="_blank"><FaInternetExplorer className="w-6 h-6" /> Try</a>
                         <a className="flex items-center w-full gap-2 bg-[#f694fb] hover:bg-[#f694fb]/80 p-2 rounded-lg text-black" href="https://github.com/Kiran301103/virtual-visit-to-indian-pilgrimage" target="_blank"><FaGithubSquare className="w-6 h-6" /> View on Github</a>
                     </div>
-                </div>   
+                </div> 
+
+                <div className="p-4 bg-[rgba(246,148,251,.2)] flex flex-col justify-between backdrop-blur-md rounded-xl self-stretch min-h-[200px] hover:bg-[rgba(246,148,251,.4)] cursor-pointer">
+                    <div className="font-bold text-lg">AI chatbot</div>
+                    I have created a chatbot using API and integrated in my Hospital Management Project
+                    <div className="mt-4 flex gap-2 h-10">
+                        <a className="flex items-center w-full gap-2 bg-[#f694fb] hover:bg-[#f694fb]/80 p-2 rounded-lg text-black" href="https://kiran-ai-chatbot.streamlit.app/" target="_blank"><FaInternetExplorer className="w-6 h-6" /> Try</a>
+                        <a className="flex items-center w-full gap-2 bg-[#f694fb] hover:bg-[#f694fb]/80 p-2 rounded-lg text-black" href="https://github.com/Kiran301103/flutter-car-rent-and-purchase-app" target="_blank"><FaGithubSquare className="w-6 h-6" /> View on Github</a>
+                    </div>
+                </div>
+
+
+                <div className="p-4 bg-[rgba(246,148,251,.2)] flex flex-col justify-between backdrop-blur-md rounded-xl self-stretch min-h-[200px] hover:bg-[rgba(246,148,251,.4)] cursor-pointer">
+                    <div className="font-bold text-lg">Machine Learning Disease Prediction</div>
+                    I have created a Machine learning disease prediction using pyton and integrated in my Hospital Management Project
+                    <div className="mt-4 flex gap-2 h-10">
+                        <a className="flex items-center w-full gap-2 bg-[#f694fb] hover:bg-[#f694fb]/80 p-2 rounded-lg text-black" href="https://kiran-ml-prediction.streamlit.app/" target="_blank"><FaInternetExplorer className="w-6 h-6" /> Try</a>
+                        <a className="flex items-center w-full gap-2 bg-[#f694fb] hover:bg-[#f694fb]/80 p-2 rounded-lg text-black" href="https://github.com/Kiran301103/flutter-car-rent-and-purchase-app" target="_blank"><FaGithubSquare className="w-6 h-6" /> View on Github</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     )
