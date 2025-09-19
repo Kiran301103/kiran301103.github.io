@@ -10,7 +10,7 @@ export default function Home() {
     var changeGreetingTimeout = null;
     var currentGreetingIndex = 0;
 
-    const [role, setRole] = useState('Artificial Intelligence','Information Technology');
+    const [role, setRole] = useState('Information Technology');
     const roles = ["AI Developer", "Web Developer", "Flutter Developer"];
     var currentRoleIndex = 0;
 
