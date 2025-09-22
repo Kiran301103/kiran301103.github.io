@@ -6,8 +6,8 @@ import { FaGithubSquare, FaLinkedin, FaMailBulk, FaPhoneSquare } from "react-ico
 
 export default function Home() {
   const greetings = [
-    "Hello", "Hola", "Bonjour", "Hallo", "Ciao",
-    "こんにちは", "नमस्ते", "வணக்கம்", "ഹലോ", "ನಮಸ್ಕಾರ", "హలో"
+    "Hello",  "வணக்கம்","Hola", "Bonjour", "Hallo", "Ciao",
+    "こんにちは", "नमस्ते", "ഹലോ", "ನಮಸ್ಕಾರ", "హలో"
   ];
   const roles = ["AI Developer", "Web Developer", "Flutter Developer"];
 
