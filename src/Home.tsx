@@ -1,42 +1,46 @@
 // @ts-nocheck
 
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import TextTransition, { presets } from "react-text-transition";
 import { FaGithubSquare, FaLinkedin, FaMailBulk, FaPhoneSquare } from "react-icons/fa";
 
 export default function Home() {
-  const [greeting, setGreeting] = useState("Hello");
-  const greetings = ["Hello", "Hola", "Bonjour", "Hallo", "Ciao", "こんにちは", "नमस्ते", "வணக்கம்", "ഹലോ", "ನಮಸ್ಕಾರ", "హలో"];
-
-  const [role, setRole] = useState("Information Technology");
+  const greetings = [
+    "Hello", "Hola", "Bonjour", "Hallo", "Ciao",
+    "こんにちは", "नमस्ते", "வணக்கம்", "ഹലോ", "ನಮಸ್ಕಾರ", "హలో"
+  ];
   const roles = ["AI Developer", "Web Developer", "Flutter Developer"];
 
-  // useRef to persist across renders
-  const currentRoleIndex = useRef(0);
-  const changeGreetingTimeout = useRef(null);
-
-  function changeGreetingandRole() {
-    if (currentRoleIndex.current >= roles.length) currentRoleIndex.current = 0;
-    setRole(roles[currentRoleIndex.current++]);
-
-    clearTimeout(changeGreetingTimeout.current);
-    changeGreetingTimeout.current = setTimeout(changeGreetingandRole, 2000);
-  }
+  const [greetingIndex, setGreetingIndex] = useState(0);
+  const [roleIndex, setRoleIndex] = useState(0);
 
   useEffect(() => {
-    if (changeGreetingTimeout.current === null) changeGreetingandRole();
+    const interval = setInterval(() => {
+      setGreetingIndex((prev) => (prev + 1) % greetings.length);
+      setRoleIndex((prev) => (prev + 1) % roles.length);
+    }, 2000);
 
-    return () => clearTimeout(changeGreetingTimeout.current); // cleanup on unmount
+    return () => clearInterval(interval); // cleanup on unmount
   }, []);
 
   return (
     <div className="p-4">
       <div className="mt-16 text-center flex justify-center font-bold text-nowrap flex-wrap text-[2rem] lg:text-[4rem]">
-        Hello! I am Kiran
+        <TextTransition
+          springConfig={presets.gentle}
+          className="text-[#f694fb] text-nowrap"
+        >
+          {greetings[greetingIndex]},
+        </TextTransition>
+        &nbsp;I am Kiran
       </div>
+
       <div className="mt-8 text-2xl font-bold text-nowrap flex justify-center">
-        <TextTransition children={role} springConfig={presets.molasses} />
+        <TextTransition springConfig={presets.molasses}>
+          {roles[roleIndex]}
+        </TextTransition>
       </div>
+
       <div className="mt-16 flex justify-center gap-12 flex-col lg:flex-row items-center">
         <div
           className="flex gap-2 text-lg cursor-pointer"
