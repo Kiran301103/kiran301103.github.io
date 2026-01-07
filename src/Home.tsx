@@ -61,7 +61,7 @@ export default function Home() {
           onClick={() => window.open("tel:+918870292116", "_blank")}
         >
           <FaPhoneSquare className="w-8 h-8 fill-[#f694fb]" />
-          +918870292116
+          +353 892153053
         </div>
         <div className="flex gap-2 text-lg items-center">
           <FaMailBulk className="w-8 h-8 fill-[#f694fb]" />
