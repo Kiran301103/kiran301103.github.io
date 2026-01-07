@@ -58,7 +58,7 @@ export default function Home() {
         </div>
         <div
           className="flex gap-2 text-lg cursor-pointer"
-          onClick={() => window.open("tel:+918870292116", "_blank")}
+          onClick={() => window.open("tel:+353 892153053", "_blank")}
         >
           <FaPhoneSquare className="w-8 h-8 fill-[#f694fb]" />
           +353 892153053
