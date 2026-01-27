@@ -16,7 +16,7 @@ export default function Works() {
 ​                    <p>Tuned hyperparameters and trained models using Adam, weight decay, dropout, early stopping on validation F1, and evaluated with weighted F1, accuracy, per-class precision/recall, and confusion matrices.</p><br></br>
                     <p>Demonstrated that temporal information and transfer learning are critical in low-data regimes, with 3D CNNs substantially outperforming 2D CNNs and the R3D-18 transfer model achieving the best performance with fewer trainable parameters.</p><br></br>
                     <div className="mt-4 flex gap-2 h-10">
-                        <a className="flex items-center w-full gap-2 bg-[#f694fb] hover:bg-[#f694fb]/80 p-2 rounded-lg text-black" href="https://github.com/Kiran301103/weather-api-and-train-ticket-reservation" target="_blank"><FaGithubSquare className="w-6 h-6" /> View on Github</a>
+                        <a className="flex items-center w-full gap-2 bg-[#f694fb] hover:bg-[#f694fb]/80 p-2 rounded-lg text-black" href="https://github.com/Kiran301103/Tennis-Stoke-Classifier" target="_blank"><FaGithubSquare className="w-6 h-6" /> View on Github</a>
                     </div>
                 </div>
 
