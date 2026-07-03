@@ -6,8 +6,8 @@ import { FaGithubSquare, FaLinkedin, FaMailBulk, FaPhoneSquare } from "react-ico
 
 export default function Home() {
   const greetings = [
-    "Hello",  "வணக்கம்","Hola", "Bonjour", "Hallo", "Ciao",
-    "こんにちは", "नमस्ते", "ഹലോ", "ನಮಸ್ಕಾರ", "హలో"
+    "Hello", "வணக்கம்", "Hola", "Bonjour", "Hallo", "Ciao",
+    "こんにちは", "नमस्ते", "ഹലോ", "ನಮಸ್ಕಾರ", "హలో"
   ];
   const roles = ["AI Developer", "Web Developer", "Flutter Developer"];
 
@@ -41,39 +41,51 @@ export default function Home() {
         </TextTransition>
       </div>
 
+      <div className="mt-10 max-w-2xl mx-auto text-center text-lg leading-relaxed">
+        MSc Advanced AI graduate (UCD, August 2026) and AI Engineer with production
+        experience architecting and deploying GenAI and agentic AI solutions serving{" "}
+        <span className="text-[#f694fb] font-bold">13,000+ users</span> on cloud
+        infrastructure. Shipped production-grade RAG pipelines, multi-agent workflows,
+        LLM inference services, and evaluation frameworks from conception to launch.
+      </div>
+
       <div className="mt-16 flex justify-center gap-12 flex-col lg:flex-row items-center">
-        <div
-          className="flex gap-2 text-lg cursor-pointer"
-          onClick={() => window.open("https://www.linkedin.com/in/kiran301103/", "_blank")}
+        <a
+          className="flex gap-2 text-lg items-center"
+          href="https://www.linkedin.com/in/kiran301103/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn profile"
         >
           <FaLinkedin className="w-8 h-8 fill-[#f694fb]" />
           Kiran M
-        </div>
-        <div
-          className="flex gap-2 text-lg cursor-pointer"
-          onClick={() => window.open("https://github.com/Kiran301103", "_blank")}
+        </a>
+        <a
+          className="flex gap-2 text-lg items-center"
+          href="https://github.com/Kiran301103"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub profile"
         >
           <FaGithubSquare className="w-8 h-8 fill-[#f694fb]" />
           Kiran301103
-        </div>
-        <div
-          className="flex gap-2 text-lg cursor-pointer"
-          onClick={() => window.open("tel:+353 892153053", "_blank")}
+        </a>
+        <a
+          className="flex gap-2 text-lg items-center"
+          href="tel:+353892153053"
+          aria-label="Call phone number"
         >
           <FaPhoneSquare className="w-8 h-8 fill-[#f694fb]" />
           +353 892153053
-        </div>
-        <div className="flex gap-2 text-lg items-center">
+        </a>
+        <a
+          className="flex gap-2 text-lg items-center"
+          href="mailto:kiran301103@gmail.com"
+          aria-label="Send email"
+        >
           <FaMailBulk className="w-8 h-8 fill-[#f694fb]" />
-          <div className="flex flex-col">
-            <div
-              onClick={() => window.open("mailto:kiran301103@gmail.com", "_blank")}
-              className="cursor-pointer"
-            >
-              kiran301103@gmail.com
-            </div>
-          </div>
-        </div>
+          kiran301103@gmail.com
+        </a>
       </div>
     </div>
   );

@@ -6,12 +6,12 @@ import CustomCursor from "./components/Cursor";
 import Contact from "./Contact";
 import Works from "./Works";
 import Resume from "./Resume";
-// import InfoFooter from "./components/InfoFooter";
+import NotFound from "./NotFound";
 
 function App() {
     return (
         <HashRouter>
-            <video autoPlay muted loop src="background.webm" className="fixed top-0 left-0 w-full h-full object-cover z-0" />
+            <video autoPlay muted loop playsInline src="background.webm" className="fixed top-0 left-0 w-full h-full object-cover z-0" />
             <div className="fixed top-0 left-0 w-full h-full text-white z-10 overflow-x-scroll">
                 <Nav />
                 <CustomCursor />
@@ -20,8 +20,8 @@ function App() {
                     <Route path="/works" element={<Works />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/resume" element={<Resume />} />
+                    <Route path="*" element={<NotFound />} />
                 </Routes>
-            {/* <InfoFooter header="Ready to Hire?" content="Hire me"/> */}
             </div>
         </HashRouter>
     );
